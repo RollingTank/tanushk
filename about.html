@@ -4,38 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tanush Kulkarni">
-    <meta name="description" content="Learn more about me, my background, interests, and what drives me.">
-    <meta name="keywords" content="personal website, blog, projects, portfolio, resume, Tanush Kulkarni">
+    <meta name="description" content="About Tanush Kulkarni: education, technical skills, and work experience in software engineering and machine learning.">
+    <meta name="keywords" content="Tanush Kulkarni, about, experience, skills, education, UIUC">
     <link rel="icon" href="img/IMG_5079.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>About Me</title>
+    <title>About Me | Tanush Kulkarni</title>
 </head>
 <body>
-    <h1>About Me</h1>
-    <div id="profile-image">
-        <img src="img/IMG_5137.JPG" alt="Tanush Kulkarni" width="200" height="200">
-    </div>
-    <div id="profile-description">
-        <p>Hello! I'm Tanush Kulkarni, a freshman at the University of Illinois Urbana-Champaign (UIUC) majoring in Computer Science and Physics. I have a passion for data analysis, robotics, and software development.</p>
-        <p>In my free time, I enjoy working on personal projects, writing blog posts, and exploring new technologies. Feel free to connect with me through the contact page!</p>
-
-    </div>
-    <div id="skills">
-        <h2>Skills & Technologies</h2>
-        <ul>
-            <li>Programming Languages: Python, Java, C++, JavaScript, HTML, CSS, Kotlin</li>
-            <li>Frameworks & Libraries: Flask, PyQt6, Requests, BeautifulSoup, OpenCV</li>
-            <li>Tools & Platforms: Git, GitHub, Linux, Jupyter Notebook, VS Code, Google Colab</li>
-            <li>Data Analysis: Pandas, NumPy, Matplotlib, TensorFlow, Seaborn, SciKitLearn</li>
-        </ul>
-    </div>
-    <div id="education">
-        <h2>Education</h2>
-        <p><strong>University of Illinois Urbana-Champaign (UIUC)</strong> - Bachelor of Science in Computer Science and Physics (Expected Graduation: May 2028)</p>
-    </div>
-    <div id="resume" style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
-    <a href="resume.pdf" target="_blank" download>Download My Resume</a>
-    </div>
     <nav aria-label="Main Navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -43,8 +21,161 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <h1>About Me</h1>
+    <div id="profile-image">
+        <img src="img/IMG_5137.JPG" alt="Tanush Kulkarni" width="200" height="200">
+    </div>
+    <div id="profile-description">
+        <p>I'm Tanush Kulkarni, a Computer Science &amp; Physics student at the University of Illinois
+        Urbana-Champaign (James Scholar Honors Program, Math minor). I'm drawn to problems where machine
+        learning, software engineering, and rigorous math intersect — I'm currently a Software Development
+        Engineer Intern at IDX Exchange and previously did NLP research at Fordham's Gabelli School of
+        Business.</p>
+        <p>Outside of coursework and internships, I build side projects (mostly computer vision and
+        automation), tutor CS 124 at UIUC, and volunteer as a technical consultant for NOBE. I'm open to
+        full-time and internship roles in software engineering, machine learning, and quantitative finance.</p>
+    </div>
+
+
+    <div id="experience">
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>IDX Exchange</h3>
+                <span class="experience-dates">Jun 2026 – Sep 2026</span>
+            </div>
+            <p class="experience-role">Software Development Engineer Intern · Remote</p>
+            <ul>
+                <li>Designed and built a scalable, full-stack property search application with a React
+                frontend, Node/Express backend, and a MySQL database storing MLS property data.</li>
+                <li>Implemented RESTful APIs and data-parsing pipelines for complex MLS datasets, plus
+                logging middleware that identified bottlenecks and improved database performance by an
+                average of 99.2%.</li>
+                <li>Developed a comprehensive test suite with Jest, including unit and component tests,
+                exceeding 70% test coverage on critical paths.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Center for Digital Transformation, Gabelli School of Business, Fordham University</h3>
+                <span class="experience-dates">May 2024 – Jan 2025</span>
+            </div>
+            <p class="experience-role">Jr. Technical Member · Remote</p>
+            <ul>
+                <li>Developed automated data-aggregation systems using Selenium to collect and aggregate
+                over 8,000 data points from multiple databases, with filters to remove duplicates.</li>
+                <li>Performed natural language processing on over 3,000 documents — semantic analysis,
+                vectorization, and topic modeling — to uncover patterns that contributed to 3 published
+                research papers.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>National Business and Engineering Organization (NOBE)</h3>
+                <span class="experience-dates">Sep 2025 – May 2026</span>
+            </div>
+            <p class="experience-role">Technical Consultant · Urbana, Illinois</p>
+            <ul>
+                <li>Developed a RESTful API backend implementing user authentication with password hashing
+                and data models for profiles, addresses, shopping carts, and order history.</li>
+                <li>Collaborated on an internal attendance-tracking system for 190+ members, prioritizing
+                reliability and detailed dashboards for administrators and regular users.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>CS 124, University of Illinois</h3>
+                <span class="experience-dates">Jan 2026 – May 2026</span>
+            </div>
+            <p class="experience-role">Assistant Tutor · Urbana, Illinois</p>
+            <ul>
+                <li>Hosted online office hours to help students debug code and understand fundamental
+                computer science concepts, providing personalized support.</li>
+                <li>Monitored the course forum, addressing questions and clarifying content in a timely
+                manner.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="skills">
+        <h2>Skills &amp; Technologies</h2>
+        <div class="skills-grid">
+            <div class="skills-group">
+                <h3>Languages</h3>
+                <ul class="tag-list">
+                    <li class="tag">Python</li>
+                    <li class="tag">C++</li>
+                    <li class="tag">JavaScript / TypeScript</li>
+                    <li class="tag">Java</li>
+                    <li class="tag">Kotlin</li>
+                    <li class="tag">HTML</li>
+                    <li class="tag">CSS</li>
+                </ul>
+            </div>
+            <div class="skills-group">
+                <h3>Machine Learning &amp; Data</h3>
+                <ul class="tag-list">
+                    <li class="tag accent">scikit-learn</li>
+                    <li class="tag accent">TensorFlow</li>
+                    <li class="tag accent">OpenCV</li>
+                    <li class="tag accent">Pandas</li>
+                    <li class="tag accent">Seaborn</li>
+                    <li class="tag accent">Mathematica</li>
+                </ul>
+            </div>
+            <div class="skills-group">
+                <h3>Web &amp; Backend</h3>
+                <ul class="tag-list">
+                    <li class="tag">React</li>
+                    <li class="tag">Node.js</li>
+                    <li class="tag">Express</li>
+                    <li class="tag">Flask</li>
+                </ul>
+            </div>
+            <div class="skills-group">
+                <h3>Tools &amp; Infrastructure</h3>
+                <ul class="tag-list">
+                    <li class="tag">Git &amp; GitHub</li>
+                    <li class="tag">Docker</li>
+                    <li class="tag">CI/CD</li>
+                    <li class="tag">PostgreSQL</li>
+                    <li class="tag">MySQL</li>
+                    <li class="tag">Jest</li>
+                    <li class="tag">Catch2</li>
+                    <li class="tag">Postman / Bruno</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="education">
+        <h2>Education</h2>
+        <div class="education-card">
+            <div class="experience-header">
+                <h3>University of Illinois Urbana-Champaign</h3>
+                <span class="experience-dates">Expected May 2028</span>
+            </div>
+            <p class="experience-role">Bachelor of Science in Computer Science and Physics, Math Minor |
+            James Scholar Honors Program &middot; GPA 3.86/4.00</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Related coursework:</strong></p>
+            <ul class="coursework-list">
+                <li>Data Structures</li>
+                <li>Computer Architecture</li>
+                <li>Classical Mechanics</li>
+                <li>Abstract Linear Algebra</li>
+                <li>Software Design Lab</li>
+                <li>Statistics and Probability II</li>
+            </ul>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 Tanush Kulkarni. All rights reserved.</p>
+        <p>&copy; 2026 Tanush Kulkarni. All rights reserved.</p>
     </footer>
     <a href="#top">Back to Top</a>
 </body>
