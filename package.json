@@ -1,0 +1,12 @@
+{
+    "name": "personal-webpage",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Tanush Kulkarni's personal portfolio site — static HTML/CSS with a single Vercel serverless function for the contact form.",
+    "scripts": {
+        "dev": "vercel dev"
+    },
+    "dependencies": {
+        "nodemailer": "^6.9.14"
+    }
+}

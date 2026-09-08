@@ -4,63 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tanush Kulkarni">
-    <meta name="description" content="Read my blog posts, updates, and thoughts on various topics.">
-    <meta name="keywords" content="personal website, blog, projects, portfolio, resume, Tanush Kulkarni">
+    <meta name="description" content="Get in touch with Tanush Kulkarni via the contact form, LinkedIn, or GitHub.">
+    <meta name="keywords" content="Tanush Kulkarni, contact, LinkedIn, GitHub">
     <link rel="icon" href="img/IMG_5079.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Contact Me</title>
+    <title>Contact | Tanush Kulkarni</title>
 </head>
 <body>
-    <h1>Contact Me</h1>
-    <p style="text-align: center;">If you'd like to get in touch, please feel free to reach out via the contact form on the page and connect with me on LinkedIn!<p>
-    <table id="contact-options">
-        <caption style="text-align: center;">Contact Options</caption>
-        <tbody>
-        <tr style="text-align: center;">
-            <td style="font-size: 20 px; font-weight: bold; text-align: center;">Contact Form</td>
-            <td font-size: 20 px; font-weight: bold; text-align: center;>
-                <form action="mailto:donotreplybackiwillnotrespond@gmail.com" method="POST" >
-                    <fieldset>
-                        <legend style="text-align: center;">Contact Me</legend>
-                    <p>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required autocomplete="on" placeholder="John Doe" aria-required="true" autofocus><br>
-                    </p>
-                    <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="_replyto" required autocomplete="on" placeholder="john.doe@example.com" aria-required="true"><br>
-                    </p>
-                    <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="10" cols="30" required placeholder="Your message here..." aria-required="true"></textarea><br>
-                    </p>
-                    <p>
-                    <button type="submit" id="submit-button">Send</button>
-                    <button type="reset" id="reset-button">Reset</button>
-                    </p>  
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td style="font-size: 20 px; font-weight: bold; text-align: center;">LinkedIn</td>
-            <td style="text-align: center;"><a href="https://www.linkedin.com/in/tanush-kulkarni-cs" target="_blank">Connect with me on LinkedIn</a></td>
-        </tr>
-        <tr>
-            <td style="font-size: 20 px; font-weight: bold; text-align: center;">My GitHub</td>
-            <td style="text-align: center;"><a href="https://github.com/RollingTank" target="_blank">View my GitHub profile</a></td>
-        </tr>
-        </tbody>
-    </table>
-
-        <nav aria-label="Main Navigation">
+    <nav aria-label="Main Navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
+
+    <h1>Contact Me</h1>
+    <p style="text-align: center;">I'm open to software engineering, machine learning, and quantitative
+    finance opportunities. The fastest way to reach me is the form below — you can also find me on
+    LinkedIn and GitHub.</p>
+
+    <form action="/api/contact" method="POST">
+        <fieldset>
+            <legend>Send Me a Message</legend>
+            <div style="position: absolute; left: -9999px; top: -9999px;" aria-hidden="true">
+                <label for="company">Leave this field blank</label>
+                <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+            </div>
+            <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required autocomplete="on" placeholder="John Doe" aria-required="true" autofocus>
+            </p>
+            <p>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="on" placeholder="john.doe@example.com" aria-required="true">
+            </p>
+            <p>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="8" cols="30" required placeholder="Your message here..." aria-required="true"></textarea>
+            </p>
+            <p>
+            <button type="submit" id="submit-button">Send</button>
+            <button type="reset" id="reset-button">Reset</button>
+            </p>
+        </fieldset>
+    </form>
+
+    <div class="connect-grid">
+        <div class="connect-card">
+            <span class="connect-icon">💼</span>
+            <a href="https://www.linkedin.com/in/tanush-kulkarni-cs" target="_blank">Connect on LinkedIn</a>
+        </div>
+        <div class="connect-card">
+            <span class="connect-icon">💻</span>
+            <a href="https://github.com/RollingTank" target="_blank">View my GitHub</a>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 Tanush Kulkarni. All rights reserved.</p>
+        <p>&copy; 2026 Tanush Kulkarni. All rights reserved.</p>
     </footer>
     <a href="#top">Back to Top</a>
 </body>
