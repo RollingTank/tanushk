@@ -9,7 +9,7 @@
     <link rel="icon" href="img/IMG_5079.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Projects | Tanush Kulkarni</title>
 </head>
@@ -22,9 +22,38 @@
         </ul>
     </nav>
 
+    <p class="page-path">projects.html</p>
     <h1>Projects</h1>
     <p style="text-align: center; max-width: 700px; margin: 0 auto 1rem;">A selection of machine learning,
     computer vision, and full-stack projects I've built — for the full list, see my GitHub.</p>
+
+    <article>
+        <h2>CourseCast — Course Registration Forecasting (In Progress)</h2>
+        <aside>
+            <details>
+                <summary>Click Here to Learn More!</summary>
+                <p>A team project (7 people) building a "weather forecast for course registration" at
+                UIUC — given a student's registration time ticket and desired sections, CourseCast predicts
+                the probability each section will still be open, using an hourly LightGBM hazard model
+                trained on live snapshots of the Course Explorer API. I'm serving as the team's
+                <strong>Evaluator</strong>: defining what a well-calibrated forecast means, measuring model
+                performance against a historical-baseline comparator with calibration metrics (Brier score,
+                reliability diagrams), and authoring the public dataset documentation following the
+                "Datasheets for Datasets" framework. For the rest of the semester, I'll be running ablation
+                studies to isolate how much the course-description text embeddings actually help forecasts
+                for brand-new courses with no registration history.</p>
+                <ul class="tag-list">
+                    <li class="tag accent">Model Evaluation</li>
+                    <li class="tag accent">Calibration &amp; Brier Score</li>
+                    <li class="tag accent">LightGBM</li>
+                    <li class="tag">Python</li>
+                    <li class="tag">pandas</li>
+                    <li class="tag">Ablation Studies</li>
+                    <li class="tag">Dataset Documentation</li>
+                </ul>
+            </details>
+        </aside>
+    </article>
 
     <article>
         <h2>Emotion Analysis Software</h2>
